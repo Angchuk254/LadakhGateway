@@ -1,0 +1,852 @@
+body {
+  font-family: 'Mulish', sans-serif !important;
+
+}
+
+nav {
+  background-color: #043662;
+  color: white;
+
+}
+
+ul {
+  list-style-type: none;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+li {
+  display: inline;
+  margin-right: 3rem;
+  color: #fff;
+  height: 70px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  padding: 10px;
+
+}
+
+li:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+li a {
+  text-decoration: none;
+  color: white;
+}
+
+.page-content {
+  margin-top: 20px;
+}
+
+#galleryContainer img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+#loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Add a loading spinner or any other loader animation */
+#loader::after {
+  content: '';
+  border: 6px solid #333;
+  border-radius: 50%;
+  border-top: 6px solid #fff;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+
+}
+
+
+
+#hamburger-btn {
+  display: none;
+  cursor: pointer;
+  font-size: 1.5em;
+}
+
+#close-btn {
+  display: none;
+  cursor: pointer;
+  font-size: 1.5em;
+  color: #333;
+
+}
+
+.bRight {
+  border-right: 1px solid #fff;
+}
+
+/* 
+  heroe banner start */
+.heroBanner {
+  background-image: url(../assets/carousel3.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+.bannerDesc {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  place-content: center;
+  align-items: center;
+  padding: 12%;
+  color: #fff;
+}
+
+.heroText {
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.subHreotext {
+  font-size: 20px;
+}
+
+.bannerHightLited {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.homeDecor {
+  background-image: url(../assets/Bike-Tour.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  display: grid;
+  justify-content: space-between;
+  place-content: space-between;
+  padding: 30px;
+  width: 15% !important;
+  background-size: contain;
+  height: 300px;
+
+}
+
+.homeDecor2 {
+  background-image: url(../assets/valley.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  display: grid;
+  justify-content: space-between;
+  place-content: space-between;
+  background-size: contain;
+  padding: 30px;
+  width: 15% !important;
+  height: 300px;
+
+}
+
+.homeDecor3 {
+  background-image: url(../assets/road.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  display: grid;
+  justify-content: space-between;
+  place-content: space-between;
+  padding: 30px;
+  background-size: contain;
+  width: 15% !important;
+  height: 300px;
+
+}
+
+.homeDecor4 {
+  background-image: url(../assets/valley.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  display: grid;
+  justify-content: space-between;
+  background-size: contain;
+  place-content: space-between;
+  padding: 30px;
+  width: 15% !important;
+  height: 300px;
+
+}
+
+.homeDecor5 {
+  background-image: url(../assets/dest-2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  display: grid;
+  background-size: contain;
+  justify-content: space-between;
+  place-content: space-between;
+  padding: 30px;
+  width: 15% !important;
+  height: 300px;
+
+}
+
+.bannerhightlitedText {
+  font-size: 30px;
+  font-weight: 500;
+  color: #043662;
+  text-align: center;
+  line-height: 1;
+}
+
+button.viewDestn {
+  color: #043662;
+  font-size: 14px;
+  background-color: #fff;
+  border: none;
+
+}
+
+.tourtext {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.viewDestn:hover {
+  color: #fff;
+  background-color: #043662;
+}
+
+.bannerHightLited {
+  margin-top: -5% !important;
+  padding: 0 !important;
+}
+
+/* heroe banner End */
+
+/* css for intro */
+p.bestTour {
+  font-size: 25px;
+  font-weight: 500;
+  color: #043662;
+  margin: 4px 0;
+}
+
+span.betertrevl {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+button.joinAdventure {
+  background-color: #fff;
+  border: 2px solid #043662;
+  width: 142px;
+  padding: 5px;
+  display: grid;
+  justify-content: center;
+  place-content: center;
+  color: #043662;
+}
+
+button.joinAdventure:hover {
+  background-color: #043662;
+  color: #fff;
+}
+
+.linedash {
+  color: #ffda39;
+}
+
+.contentfixer {
+  max-width: 1200px;
+  margin: 0 auto !important;
+  padding: 2%;
+}
+
+
+/* css for intro END*/
+
+
+/* shooterBanner css atRT */
+.shortData3 {
+  background-image: url(../assets/flakstad_pano.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+}
+
+.fa-solid,
+.fas {
+  font-weight: 900;
+  font-size: 43px;
+  color: #fff;
+}
+
+p.iocnheading {
+  font-size: 30px;
+  color: #043662;
+  font-weight: 500;
+}
+
+p.iconsPara {
+  margin: 0;
+  color: #fff;
+  line-height: 1.2;
+  font-size: 20px;
+}
+
+/* shooterBanner css  END*/
+/* packges css start*/
+
+.cards-wrapper {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.card-carousel {
+  display: flex;
+  transition: margin 0.3s ease-in-out;
+}
+
+.card {
+  flex: 0 0 25%;
+
+  box-sizing: border-box;
+}
+
+.carousel-button {
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+.carousel-container {
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+  margin: 20px auto;
+  overflow: hidden;
+}
+
+.nav-btn {
+  cursor: pointer;
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 20px;
+  /* Adjust the gap between cards as needed */
+  transition: transform 0.5s ease-in-out;
+  overflow: hidden;
+}
+
+.carousel-card {
+  flex: 0 0 282px;
+  box-sizing: border-box;
+  text-align: center;
+
+}
+
+.card-img-top {
+  width: 100%;
+  height: 200px;
+}
+
+.card-body {
+  text-align: left;
+  margin: 0px;
+}
+
+.MainBooking {
+  margin: 7px 0px;
+}
+
+.btnner {
+  display: flex;
+  justify-content: end;
+}
+
+p.populatHead {
+  margin: 0;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+button.navigate-btn {
+  background-color: #fff;
+  border: navajowhite;
+}
+
+.navigate-btn {
+  font-size: 30px;
+  color: #043662;
+}
+
+button.btnJoin {
+  background-color: #fff;
+  border: 1px solid #043662;
+  color: #043662;
+}
+
+button.btnJoin:hover {
+  background-color: #043662;
+  color: #fff;
+}
+
+p.card-text {
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+.card-container {
+  display: flex;
+  /* overflow: hidden; */
+  transition: transform 0.3s ease;
+}
+
+.card {
+  /* width: 288px; */
+  margin-right: 10px;
+}
+
+.packheading {
+  font-size: 20px;
+  font-weight: 300;
+  color: #043662;
+}
+
+button.packgeData {
+  background-color: #fff;
+  color: #043662;
+  border: 1px solid #043662;
+}
+
+button.packgeData:hover {
+  background-color: #043662;
+  color: #fff;
+}
+
+.LeftArrow {
+  cursor: pointer;
+}
+
+h5.card-title {
+  color: #043662;
+}
+
+.p.card-text {
+  color: #043662;
+}
+
+.pack1Trip {
+  background-image: url(../assets/prateek-katyal-JoIx9FWaX38-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* packges  end */
+
+
+/* extraSomeOne */
+.NameTrip {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.NameTrip {
+  color: #043662;
+}
+
+.loveRate {
+  margin-right: 20px;
+}
+
+.lni-share,
+.lni-envelope {
+  cursor: pointer;
+}
+
+.logEmail {
+  color: #043662;
+  cursor: pointer;
+}
+
+.logEmail:hover {
+  text-decoration: underline;
+}
+
+.overView {
+  background-color: #fff;
+  color: #043662;
+  border: none;
+}
+
+.overView-axtive {
+  color: #043662;
+}
+
+.listData li {
+  color: #043662 !important;
+  padding: 5px 0;
+}
+
+ul.listData {
+  display: block !important;
+  list-style: disc !important;
+  margin: auto;
+  padding: auto;
+}
+
+ul.listData li {
+  height: auto;
+  display: block !important;
+  margin-right: 0;
+  color: #043662;
+  text-indent: -.8em;
+}
+
+.list-group-item+.list-group-item {
+  height: auto;
+  text-align: start;
+}
+
+/* .hotelView {
+  width: 65%;
+} */
+
+p.popularPages {
+  font-size: 30px;
+  color: #043662;
+}
+
+p.card-title.stayNamer {
+  font-size: 15px;
+  line-height: 1;
+}
+a.packgeData{
+  background-color: #fff;
+    color: #043662;
+    border: 1px solid #043662;
+    padding: 8px;
+    text-decoration: none;
+    text-align: center;
+}
+a.packgeData:hover{
+  background-color: #043662;
+  color: #fff;
+ 
+  
+}
+.lni-star-fill{
+  color: #ffda39 !important;
+}
+.googleReview{
+  text-decoration: none;
+  color: #01abff;
+}
+p.tourDays {
+  font-size: 22px;
+  color: #043662;
+}
+.day1Tour {
+  border-bottom: 1px solid grey;
+}
+/* extraSomeOne */
+/* css for tripDaries */
+.containerZ {
+	max-width: 100rem;
+	margin: 0 auto;
+	/* padding: 0 2rem 2rem; */
+}
+
+.heading {
+	font-family: "Montserrat", Arial, sans-serif;
+	font-size: 4rem;
+	font-weight: 500;
+	line-height: 1.5;
+	text-align: center;
+	padding: 3.5rem 0;
+	color: #1a1a1a;
+}
+
+.heading span {
+	display: block;
+}
+
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	/* Compensate for excess margin on outer gallery flex items */
+	margin: -1rem -1rem;
+}
+
+.gallery-item {
+	/* Minimum width of 24rem and grow to fit available space */
+	flex: 1 0 24rem;
+	/* Margin value should be half of grid-gap value as margins on flex items don't collapse */
+	margin: 1rem;
+	box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+	overflow: hidden;
+}
+
+.gallery-image {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: transform 400ms ease-out;
+}
+
+.gallery-image:hover {
+	transform: scale(1.15);
+}
+.i4ewOd-pzNkMb-tJHJj{
+  display: none !important;
+}
+.SfQLQb-QClCJf-giiMnc .i4ewOd-pzNkMb-tJHJj {
+  height: 40px;
+}
+/*
+
+The following rule will only run if your browser supports CSS grid.
+
+Remove or comment-out the code block below to see how the browser will fall-back to flexbox styling. 
+
+*/
+
+@supports (display: grid) {
+	.gallery {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+		grid-gap: 2rem;
+	}
+
+	.gallery,
+	.gallery-item {
+		margin: 0;
+	}
+}
+
+/* css for tripDaries */
+
+
+
+/* css for WHY us  start*/
+.whyUSBanner{
+  background-image: url(../assets/WhyUS.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.whyPara{
+  margin-left: 15px;
+}
+.lni-world,.lni-briefcase,.lni-taxi,.lni-travel,.lni-grow,.lni-travel{
+  font-size: 32px !important;
+}
+p.whymainHead {
+  font-size: 30px;
+  font-weight: 300;
+}
+p.headtWhy {
+  font-size: 20px;
+}
+/* css for WHY us  END*/
+@media only screen and (min-width:640px) {
+  #hamburger-btn {
+    display: none !important;
+
+  }
+
+  .mobileView {
+    display: flex;
+    justify-content: end;
+  }
+
+  .mobile2 {
+    justify-content: end !important;
+  }
+}
+
+@media only screen and (max-width:1025px)and (orientation:portrait) {
+
+  .homeDecor,
+  .homeDecor2,
+  .homeDecor3,
+  .homeDecor4,
+  .homeDecor5 {
+    width: 30% !important;
+    padding: 40px;
+  }
+
+  .bannerhightlitedText {
+    font-size: 25px;
+    font-weight: 500;
+    color: #043662;
+    text-align: center;
+    line-height: 1;
+  }
+
+  .bannerHightLited {
+    margin-top: -8% !important;
+  }
+}
+
+@media only screen and (max-width:768px)and (orientation:portrait) {
+
+  .homeDecor,
+  .homeDecor2,
+  .homeDecor3,
+  .homeDecor4,
+  .homeDecor5 {
+    width: 15% !important;
+    padding: 67px;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .bannerHightLited {
+    margin-top: -11% !important;
+  }
+
+  .homeDecor,
+  .homeDecor2,
+  .homeDecor3,
+  .homeDecor4,
+  .homeDecor5 {
+    width: 12% !important;
+    padding: 65px;
+    justify-content: center;
+    text-align: center;
+    /* align-items: center; */
+    /* place-content: center; */
+  }
+
+  .bannerhightlitedText {
+    font-size: 20px;
+    font-weight: 500;
+    color: #043662;
+    text-align: center;
+    line-height: 1;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 45px;
+    left: 0;
+    background-color: #f9f9f9;
+    width: 100%;
+    text-align: center;
+  }
+
+  ul.show {
+    display: flex;
+    width: 50%;
+    justify-content: end;
+  }
+
+  li {
+    margin: 0;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    color: #fff;
+    background-color: #043662;
+    height: 41px;
+  }
+
+  #hamburger-btn {
+    display: block;
+    color: #043662;
+    border: none;
+  }
+
+  #navbar {
+    padding: 3px;
+  }
+
+  #close-btn {
+    display: none;
+    color: #043662;
+    border: none;
+  }
+
+  ul.show {
+    display: flex;
+    z-index: 3;
+  }
+
+  .bRight {
+    border-top: 1px solid #fff;
+    border-right: none;
+  }
+
+  .carousel-container {
+    width: 100%;
+  }
+
+  .mobileView {
+    display: grid;
+
+  }
+
+  .list-group {
+    position: static;
+  }
+
+  .hotelView {
+    width: 100%;
+  }
+  p.popularPages {
+    font-size: 28px;
+    color: #043662;
+}
+}
+
