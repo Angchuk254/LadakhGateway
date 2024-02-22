@@ -685,7 +685,7 @@ Remove or comment-out the code block below to see how the browser will fall-back
 .whyPara{
   margin-left: 15px;
 }
-.lni-world,.lni-briefcase,.lni-taxi,.lni-travel,.lni-grow,.lni-travel{
+.lni-world,.lni-briefcase,.lni-taxi,.lni-travel,.lni-grow,.lni-travel,.lni-apartment,.lni-scooter,.lni-bi-cycle,.lni-dinner,.lni-ship,.lni-pyramids{
   font-size: 32px !important;
 }
 p.whymainHead {
@@ -695,7 +695,61 @@ p.whymainHead {
 p.headtWhy {
   font-size: 20px;
 }
+
+@supports (display: grid) {
+	.galleryZ {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+		grid-gap: 0rem;
+	}
+
+	
+}
+.headingZ {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: center;
+  padding: 0.5rem 0;
+  color: #1a1a1a;
+}
 /* css for WHY us  END*/
+
+
+/* css for services start */
+.bgServices{
+  background-image: url(../assets/ppobanner.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: .5%;
+}
+.subtitleservicesMain{
+  font-size: 13px;
+  
+}
+.headMainservices{
+  font-size: 18px;
+  font-weight: 400;
+  
+}
+.columbs{
+  background-color: #fff;
+  color: #043662;
+  cursor: pointer;
+  /* margin-left: 10px; */
+ 
+}
+.columbs:hover{
+  background-color: #043662;
+  color: #fff;
+}
+.servicesPage{
+  font-size: 28px;
+  color: #043662;
+  font-weight: 400;
+}
+/* css for services END*/
 @media only screen and (min-width:640px) {
   #hamburger-btn {
     display: none !important;
@@ -709,6 +763,9 @@ p.headtWhy {
 
   .mobile2 {
     justify-content: end !important;
+  }
+  .columbs{
+    width: 24% !important;
   }
 }
 
@@ -848,5 +905,6 @@ p.headtWhy {
     font-size: 28px;
     color: #043662;
 }
+
 }
 

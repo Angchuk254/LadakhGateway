@@ -33,9 +33,12 @@ function showPage(pageId) {
         contentData.innerHTML = `
             <h2>${pageContent.title}</h2>
             <p>${pageContent.content}</p>
-            <p>${pageContent.data1}</p>
-            <p>${pageContent.data2}</p>
-            <p>${pageContent.data3}</p>
+            <div>${pageContent.data1}</div>
+            <div>${pageContent.data2}</div>
+            <div>${pageContent.data3}</div>
+            <div class="mb-5">${pageContent.data4}</div>
+            <div>${pageContent.data5}</div>
+            <div>${pageContent.data6}</div>
         `;
     }
 }
