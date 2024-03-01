@@ -31,19 +31,22 @@ function showPage(pageId) {
         // Update the page content dynamically
         const contentData = document.querySelector('.contentData');
         contentData.innerHTML = `
-            <h2>${pageContent.title}</h2>
-            <p>${pageContent.content}</p>
+            <div class="mt-0">${pageContent.title}</div>
+            <div>${pageContent.content}</div>
             <div>${pageContent.data1}</div>
             <div>${pageContent.data2}</div>
             <div>${pageContent.data3}</div>
-            <div class="mb-5">${pageContent.data4}</div>
+            <div >${pageContent.data4}</div>
             <div>${pageContent.data5}</div>
             <div>${pageContent.data6}</div>
         `;
+        scrollToTop();
     }
+   // scrollToTop();
 }
 function showPackges(packId) {
     const packData = packagesData[packId];
+    scrollToTop();
     if (packData) {
         const contentData = document.querySelector('.contentData');
         contentData.innerHTML = `
@@ -65,9 +68,9 @@ function showPackges(packId) {
               </div>
               <div class="mobileView  justify-content-between p-0 ">
                   <div class="connector d-flex col-md-8 col-12 align-content-center ">
-                      <p class="emailIDD loveRate"><i class="lni lni-envelope" onclick="shareContent()"> Email: </i> <span
+                      <p class="emailIDD loveRate"><i class="lni lni-envelope lixonsZ" onclick="shareContent()"></i> <span
                               class="logEmail" onclick="shareContent()">admin@gateway.com</span></p>
-                      <p class="contactDeal"><i class="lni lni-phone"></i> +91 123456789</p>
+                      <p class="contactDeal"><i class="lni lni-phone lixonsZ"></i> +91 123456789</p>
                   </div>
                   <div class=" d-flex mobile2 col-md-4 col-12  ">
                       <p class="loveRate">❤️ 12</p>
@@ -192,9 +195,10 @@ function showPackges(packId) {
        </div>
       </div>
           `;
+         
     }
     showNestedData(packId, 'overview');
-    scrollToTop();
+  
 }
 
 function showNestedData(packId, nestedKey) {
@@ -206,6 +210,7 @@ function showNestedData(packId, nestedKey) {
           <div class="nested-data">
               <p>${nestedData}</p>
           </div>`;
+          scrollToTop();
         //   const buttons = document.querySelectorAll('.overView');
         //   buttons.forEach(button => {
         //     button.style.color="red"
@@ -221,6 +226,7 @@ function showNestedData(packId, nestedKey) {
     //   document.querySelector('.i4ewOd-pzNkMb-r4nke-LS81yb').style.display = 'none';
     //   alert('gggg')
     // }, 5000);
+    
 }
 
 showPage('home')
@@ -268,6 +274,39 @@ async function shareContent() {
 function scrollToTop() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+  
 }
 
 
+function submitForm() {
+  if (validateForm()) {
+    showSuccessPopup();
+   
+  }
+}
+
+function validateForm() {
+  var name = document.getElementById("name").value;
+  var email = document.getElementById("email").value;
+
+  if (name === "" || email === "") {
+   const failform= document.getElementById('fail-popup');
+   failform.style.display='block'
+    setTimeout(function () {
+      failform.style.display = "none";
+    }, 3000);
+    return false;
+  }
+  showPage('contact')
+  return true;
+}
+
+function showSuccessPopup() {
+  var successPopup = document.getElementById("success-popup");
+  successPopup.style.display = "flex";
+  setTimeout(function () {
+    successPopup.style.display = "none";
+    
+  }, 2000); // Hide popup after 3 seconds
+ // showPage('contact')
+}

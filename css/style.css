@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 body {
-  font-family: 'Mulish', sans-serif !important;
+  font-family: "Montserrat", sans-serif !important;
+  font-optical-sizing: auto;
+ 
+  font-style: normal;
 
 }
 
@@ -115,7 +119,9 @@ ul {
   color: #333;
 
 }
-
+.logo{
+  font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+}
 .bRight {
   border-right: 1px solid #fff;
 }
@@ -298,7 +304,25 @@ button.joinAdventure:hover {
   margin: 0 auto !important;
   padding: 2%;
 }
+.ExploreheroBanner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
 
+}
+.exploreHead{
+  font-size: 45px;
+  color: #fff;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin: 0;
+}
+.subtitletExt{
+  font-size: 30px;
+  color: #fff;
+  margin: 0;
+}
 
 /* css for intro END*/
 
@@ -685,7 +709,7 @@ Remove or comment-out the code block below to see how the browser will fall-back
 .whyPara{
   margin-left: 15px;
 }
-.lni-world,.lni-briefcase,.lni-taxi,.lni-travel,.lni-grow,.lni-travel,.lni-apartment,.lni-scooter,.lni-bi-cycle,.lni-dinner,.lni-ship,.lni-pyramids{
+.lni-world,.lni-briefcase,.lni-taxi,.lni-travel,.lni-grow,.lni-travel,.lni-apartment,.lni-scooter,.lni-bi-cycle,.lni-dinner,.lni-ship,.lni-pyramids,.lni-instagram,.lni-whatsapp,.lni-envelope,.lni-phone,.lni-cool,.lni-travel,.lni-cog,.lni-map,.lni-home,.lni-mobile{
   font-size: 32px !important;
 }
 p.whymainHead {
@@ -750,6 +774,314 @@ p.headtWhy {
   font-weight: 400;
 }
 /* css for services END*/
+
+
+/* css for exploreLadakh start */
+.exploreabnner{
+  background-image: url(../assets/prateek-katyal-JoIx9FWaX38-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 10%;
+}
+.mattherExplore{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.exploreTexter{
+  font-size: 17px;
+  color: #043662;
+  margin: 0 auto;
+  width: 50%;
+
+}
+.heatdExplorematch{
+  font-size: 30px;
+  color: #043662;
+  font-weight: 400;
+  
+}
+
+.custom-box {
+  background-size: cover;
+  background-position: center;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20px;
+  color: #fff;
+  border-radius: 5px;
+}
+.box1 {
+  background-image: url('../assets/amrita-ghanty-7xzdTz9R-Yg-unsplash.jpg');
+}
+.box2 {
+  background-image: url('../assets/Bike-Tour.jpg');
+}
+.box3 {
+  background-image: url('../assets/md-efthakhar-ui-alam-JJlohVR7n8Q-unsplash.jpg');
+}
+.box4 {
+  background-image: url('../Backup/IMG-20240116-WA0019.jpg');
+}
+.box5 {
+  background-image: url('../Backup/IMG-20240116-WA0011.jpg');
+}
+.box6 {
+  background-image: url('../Backup/IMG-20240116-WA0035.jpg');
+}
+.newsBakker{
+  background-image: url(../assets/Japan.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 1%;
+  
+}
+.btnNews{
+  font-size: 26px;
+  color: #fff;
+  background-color: #043662;
+  border: none;
+  padding: 2.5%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+.box12 {
+  background-image: url('../Backup/IMG-20240116-WA0028.jpg');
+}
+.box22 {
+  background-image: url('../Backup/IMG-20240116-WA0037.jpg');
+}
+.box32 {
+  background-image: url('../Backup/IMG-20240116-WA0029.jpg');
+}
+.box42 {
+  background-image: url('../Backup/IMG-20240116-WA0012.jpg');
+}
+.box52 {
+  background-image: url('../Backup/IMG-20240116-WA0033.jpg');
+}
+.box62 {
+  background-image: url('../assets/rishikesh-u-K4Th0pOUpzI-unsplash.jpg');
+}
+.pesonaKabber{
+  background-image: url(../assets/accordion-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* padding: 2%tre; */
+}
+.pesonNammmer{
+  font-size: 20px;
+  font-weight: 400;
+  color: #043662;
+}
+/* css for exploreLadakh end */
+/* about us css   start*/
+.aboutUS{
+  font-size: 30px;
+  color: #043662;
+}
+.lni-instagram,.lni-whatsapp,.lni-envelope,.malller{
+  cursor: pointer;
+}
+.lni-instagram:hover{
+color: red;
+}
+.lni-whatsapp:hover{
+  color: green;
+}
+.malller:hover{
+  color: #043662;
+  text-decoration: underline;
+}
+.lixonsZ{
+  font-size: 12px !important;
+}
+.box123 {
+  background-image: url('../Backup/IMG-20240116-WA0016.jpg');
+}
+.box223 {
+  background-image: url('../Backup/IMG-20240116-WA0015.jpg');
+}
+.box323 {
+  background-image: url('../Backup/IMG-20240116-WA0013.jpg');
+}
+.box423 {
+  background-image: url('../assets/hemis.jpg');
+}
+.box523 {
+  background-image: url('../assets/alchi-monastry.jpg');
+}
+.box623 {
+  background-image: url('../assets/Likir-monastery-leh.jpg');
+}
+/* new */
+.box1234 {
+  background-image: url('../Backup/IMG-20240116-WA0024.jpg');
+}
+.box2234 {
+  background-image: url('../assets/river-rafting-ladakh2.jpg');
+}
+.box3234 {
+  background-image: url('../assets/camping.jpg');
+}
+.box4234 {
+  background-image: url('../assets/Shopping-Places-in-Leh-Ladakh.jpg');
+}
+.box5234 {
+  background-image: url('../assets/culture.jpg');
+}
+.box6234 {
+  background-image: url('../assets/para.webp');
+}
+.aboutUSZ{
+  background-image: url('../assets/carousel3.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.aboutUS{
+  font-size: 40px;
+  color: #fff;
+  padding: 1%;
+}
+.viewAboutDest{
+  border: 1px solid #043662;
+  padding: 1%;
+  font-size: 15px;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #043662;
+}
+.viewAboutDest:hover{
+  background-color: #043662;
+  color: #fff;
+}
+.plannerAbout h4{
+  font-size: 18px;
+}
+.cunnefaker{
+  margin-right: 8%;
+}
+.nukSucss{
+  color: #01abff;
+  font-weight: 500;
+  font-size: 25px;
+  text-align: center;
+}
+.namerFake{
+  color: #043662;
+  font-size: 18px;
+}
+.explreabouter{
+  font-size: 30px;
+  color: #043662;
+}
+.campngImg{
+  width: 100%;
+}
+.elfsight-app-087f742d-fe4a-4ee5-b9d1-2adab9a5c7e3 a{
+  display: none !important;
+}
+/* about us css end  */
+/* form css start */
+#success-popup {
+  display: none;
+ 
+  color: #043662;
+  padding: 15px;
+  border-radius: 5px;
+  text-align: center;
+  position: fixed;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999;
+}
+#fail-popup{
+  display: none;
+ 
+  color: #043662;
+  padding: 15px;
+  border-radius: 5px;
+  text-align: center;
+  position: fixed;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999;
+}
+.form-control{
+  border: 1px solid #043662 !important;
+ 
+}
+.addresnamer,.addresnamer{
+  cursor: pointer;
+}
+.addresnamer{
+  /* font-size: 18px; */
+  font-weight: 500;
+  color: #043662;
+}
+.sutttle{
+  font-size: 15px;
+  color: #043662;
+  line-height: 1.2;
+}
+.contactusbanner{
+  background-image: url('../assets/accordion-bg.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 3%;
+}
+.SubmitPerson{
+  color: #043662;
+  background-color: #fff;
+  font-size: 20px;
+  border: 1px solid #043662;
+  padding: 5px;
+  width: 15%;
+}
+.SubmitPerson:hover{
+  background-color: #043662;
+  color: #fff;
+}
+.adlocals{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  place-content: center;
+}
+.CONTACuS{
+  color: #043662;
+}
+.getTouch{
+  font-size: 20px;
+  font-weight: 500;
+  color: #043662;
+}
+.fooLinksNav{
+  cursor: pointer;
+}
+.fooLinksNav:hover{
+  text-decoration: underline;
+}
+/* .innerSubtileAddres{
+
+} */
+/* form css start */
 @media only screen and (min-width:640px) {
   #hamburger-btn {
     display: none !important;
@@ -766,6 +1098,32 @@ p.headtWhy {
   }
   .columbs{
     width: 24% !important;
+  }
+  .explreLdakhBanner{
+    height: 500px !important;
+  }
+  .explorebannerImg{
+    height: 600px;
+   
+
+  }
+  .bikeHero{
+    display: flex;
+    
+    align-items: center;
+  }
+  .fixemob{
+    margin-top: 2% !important;
+  }
+  .bikeHero{
+    display: flex;
+    justify-content: center;
+  }
+  .fixemob2{
+    margin-top: 5%;
+  }
+  .plannerNews{
+    margin-top: 0;
   }
 }
 
@@ -905,6 +1263,53 @@ p.headtWhy {
     font-size: 28px;
     color: #043662;
 }
-
+.explorebannerImg{
+  height: auto !important;
+  width: 100%;
 }
-
+.fixemob{
+  margin-top: 0 !important;
+}
+p.frontlinner{
+  font-size: 25px;
+}
+.linerExplore{
+border: none;
+}
+.fixemob2{
+  margin-top: 5% !important;
+}
+.exploreTexter{
+  width: 100%;
+}
+.plannerNews{
+  margin-top: 30px !important;
+}
+.subtitletExt {
+  font-size: 21px;
+  color: #fff;
+  margin: 0;
+}
+.namerFake {
+  color: #043662;
+  font-size: 11px;
+}
+.adlocals{
+  display: grid;
+  justify-content: start;
+  align-items: center;
+  place-content: start;
+  margin:8% 0 !important;
+}
+.SubmitPerson{
+  width: 100%;
+}
+.fixermob{
+  margin-top: 10px !important;
+}
+#success-popup,#fail-popup{
+  width: 100%;
+ left: 50%;
+  top: 9%;
+}
+}

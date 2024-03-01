@@ -24,13 +24,13 @@
     <nav>
 
         <div id="navbar">
-            <h3 style="padding: 1%;">LOGO</h3>
+            <h3 style="padding: 1%;" class="logo">LOGO</h3>
             <ul>
-                <li><a href="#" onclick="showPage('home')">Home</a></li>
-                <li><a href="#" onclick="showPage('contact')">Contact</a></li>
-                <li><a href="#" onclick="showPage('packages')">Packages</a></li>
-                <li><a href="#" onclick="showPage('guide')">Travel Guide</a></li>
-                <li><a href="#" onclick="showPage('gallery')">Gallery</a></li>
+                <li><a href="#" onclick="showPage('home')">HOME</a></li>
+                <li><a href="#" onclick="showPage('packages')">PACKAGES</a></li>
+                <li><a href="#" onclick="showPage('gallery')">TRAVEL GUIDE</a></li>
+                <li><a href="#" onclick="showPage('guide')">ABOUT US</a></li>
+                <li><a href="#" onclick="showPage('contact')">CONTACT</a></li>
             </ul>
             <div id="mobile-menu">
                 <button id="hamburger-btn">&#9776;</button>
@@ -40,19 +40,12 @@
     </nav>
     <div class="contentData"></div>
 
- 
- 
 
    
 
 
-
-
-
-
-
-
-
+    
+    
 
 
 
@@ -64,11 +57,11 @@
                 </div>
                 <div class="col-sm-4 col-md-3 bRight p-2">
                     <h5>QUICK LINKS</h5>
-                    <p>Home</p>
-                    <p>Tour</p>
-                    <p>Gallery</p>
-                    <p>Packages</p>
-                    <p>Contact</p>
+                    <p class="fooLinksNav" onclick="showPage('home')">HOME</p>
+                    <p class="fooLinksNav" onclick="showPage('packages')">PACKAGES</p>
+                    <p class="fooLinksNav" onclick="showPage('guide')">TRAVEL GUIDE</p>
+                    <p class="fooLinksNav" onclick="showPage('guide')">ABOUT US</p>
+                    <p class="fooLinksNav" onclick="showPage('contact')">CONTACT</p>
                 </div>
                 <div class="col-sm-4 col-md-3 bRight p-2">
                     <h5>EXPLORE MORE</h5>
@@ -94,6 +87,7 @@
         </div>
     </div>
 
+    <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
 
 
     <script src="./scripts/scripts.js"></script>
