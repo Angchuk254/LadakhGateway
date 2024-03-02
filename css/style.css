@@ -12,6 +12,13 @@ nav {
   color: white;
 
 }
+.logo{
+  font-family: "Montserrat", sans-serif !important;
+  font-optical-sizing: auto;
+ 
+  font-style: normal;
+
+}
 
 ul {
   list-style-type: none;
@@ -119,9 +126,7 @@ ul {
   color: #333;
 
 }
-.logo{
-  font-family: Verdana, Geneva, Tahoma, sans-serif !important;
-}
+
 .bRight {
   border-right: 1px solid #fff;
 }
@@ -375,6 +380,7 @@ p.iconsPara {
 
   box-sizing: border-box;
 }
+
 
 .carousel-button {
   background: none;
@@ -1075,13 +1081,200 @@ color: red;
 .fooLinksNav{
   cursor: pointer;
 }
-.fooLinksNav:hover{
-  text-decoration: underline;
-}
+
 /* .innerSubtileAddres{
 
 } */
 /* form css start */
+
+
+/* travel gide css start */
+.theUnlimtedGuide{
+  background-image: url(../assets/camelride.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 8%;
+  display: grid;
+  align-items: center;
+}
+.Guidetravel{
+  font-size: 40px;
+ font-weight: 500;
+ color: #043662;
+}
+.box12Leh{
+  background-image: url(../assets/Shopping-Places-in-Leh-Ladakh.jpg);
+}
+.box22Leh{
+  background-image: url(../assets/cFE.webp);
+}
+.box32Leh{
+  background-image: url(../assets/siteSeeing.webp);
+}
+.box42Leh{
+  background-image: url(../assets/DSC_0035.JPG);
+}
+.box52Leh{
+  background-image: url(../assets/DSC_0055.JPG);
+}
+.box62Leh{
+  background-image: url(../Backup/IMG-20240116-WA0023.jpg);
+}
+.connectER{
+  background-color: #fff;
+  color: #043662;
+  font-size: 20px;
+  border: 1px solid #043662;
+}
+.connectER:hover{
+  background-color: #043662;
+  color: #fff;
+}
+.innerOffer{
+  color: #043662;
+  font-size: 35px;
+}
+.box1Show{
+  background-image: url(../Backup/IMG-20240116-WA0007.jpg);
+}
+.box2Show{
+  background-image: url(../Backup/IMG-20240116-WA0024.jpg);
+}
+.box3Show{
+  background-image: url(../assets/IMG_1159.JPG);
+}
+.box4Show{
+  background-image: url(../assets/P1140468.JPG);
+}
+.box5Show{
+  background-image: url(../assets/P1140426.JPG);
+}
+.box6Show{
+  background-image: url(../assets/\/DSC_0962.JPG);
+}
+.ustffier{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+ place-content: center;
+ text-align: center;
+ line-height: 1;
+}
+.lofAdresmaker{
+  color: #fff;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 1;
+  margin: 0;
+}
+.subtMakker{
+  font-size: 25px;
+  color: #fff;
+  margin: 0;
+  line-height: 1;
+}
+.nannerZZ{
+  font-size: 25px;
+  color: #043662;
+  font-weight: 500;
+}
+.i4ewOd-pzNkMb-tJHJj{
+  display: none !important;
+}
+.box1Sham{
+  background-image: url(../assets/ShamValley/spituk-monsatery3.jpg);
+}
+.box2Sham{
+  background-image: url(../assets/ShamValley/Magnetic-Hill.webp);
+}
+.box3Sham{
+  background-image: url(../assets/ShamValley/Spituk_Gustor_Festival_6-Goutam-1962.webp);
+}
+.box4Sham{
+  background-image: url(../Backup/IMG-20240116-WA0015.jpg);
+}
+.box5Sham{
+  background-image: url(../Backup/IMG-20240116-WA0035.jpg);
+}
+.box6Sham{
+  background-image: url(../assets/Apricot-Blossom-Festival-2.jpg);
+}
+.box1Nub{
+  background-image: url(../assets/Nubra/gompaNubra.jpg);
+}
+.box2Nub{
+background-image: url(../assets/Nubra/Diskit-Gompa_14th-dec.webp);
+}
+.box3Nub{
+  background-image: url(../assets/Nubra/Panamik-Village_14th-dec.webp);
+}
+.box4Nub{
+  background-image: url(../assets/Nubra/Hunder-sand-dunes_14th-dec.webp);
+}.box5Nub{
+  background-image: url(../assets/Nubra/Maitreya_Buddha\,_Ladakh.jpg);
+}
+.box6Nub{
+  background-image: url(../assets/camping.jpg);
+}
+.box1Zan{
+  background-image: url(../assets/Zanskar/P1140729.JPG);
+}
+.box2Zan{
+  background-image: url(../assets/Zanskar/phuktal.jpg);
+}
+.box3Zan{
+  background-image: url(../assets/Zanskar/wildLife.JPG);
+}
+.box4Zan{
+  background-image: url(../assets/Zanskar/DSC_5386.JPG);
+}
+.box5Zan{
+  background-image: url(../assets/Zanskar/99.webp);
+}
+.box6Zan{
+  background-image: url(../assets/Zanskar/GOPR1124.JPG);
+}
+.box1Chang{
+  background-image: url(../assets/chnagthnag/pangong-lake-ladakh3.jpg);
+}
+.box2Chang{
+  background-image: url(../assets/chnagthnag/hanle.jpg);
+}
+.box3Chang{
+  background-image: url(../assets/chnagthnag/chumathnag.jpeg);
+}
+.box4Chang{
+  background-image: url(../assets/chnagthnag/korzok.jpg);
+}
+.box5Chang{
+  background-image: url(../assets/chnagthnag/nomadic.jpg);
+}
+.box6Sham{
+  background-image: url(../assets/chnagthnag/tanglang-la.jpg);
+}
+.box1Gom{
+  background-image: url(../assets/monastries/hemis.webp);
+}
+.box2Gom{
+background-image: url(../assets/monastries/Matho_Monastery.webp);
+}
+.box3Gom{
+background-image: url(../assets/monastries/Rangdum_Gompa.JPG);
+}
+.box4Gom{
+background-image: url(../assets/monastries/stanka.webp);
+}
+.box5Gom{
+background-image: url(../assets/monastries/Rizong_Maitreya.webp);
+}
+.box6Gom{
+background-image: url(../assets/monastries/thinksey.webp);
+}
+/* travel gide css  end*/
+
+
 @media only screen and (min-width:640px) {
   #hamburger-btn {
     display: none !important;
@@ -1149,8 +1342,16 @@ color: red;
   .bannerHightLited {
     margin-top: -8% !important;
   }
+  li{
+    font-size: 14px;
+  }
 }
-
+@media only screen and (max-width:820px) and (orientation:portrait){
+  .bannerhightlitedText{
+    font-size: 20px;
+  }
+ 
+}
 @media only screen and (max-width:768px)and (orientation:portrait) {
 
   .homeDecor,
@@ -1311,5 +1512,26 @@ border: none;
   width: 100%;
  left: 50%;
   top: 9%;
+}
+.Guidetravel {
+  font-size: 32px;
+}
+.innerOffer {
+  color: #043662;
+  font-size: 24px;
+}
+.ustffier{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+ place-content: center;
+ text-align: start;
+ line-height: 1;
+}
+.card {
+  flex: 0 0 75%;
+
+  box-sizing: border-box;
 }
 }

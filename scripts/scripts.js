@@ -46,7 +46,7 @@ function showPage(pageId) {
 }
 function showPackges(packId) {
     const packData = packagesData[packId];
-    scrollToTop();
+   
     if (packData) {
         const contentData = document.querySelector('.contentData');
         contentData.innerHTML = `
@@ -195,7 +195,7 @@ function showPackges(packId) {
        </div>
       </div>
           `;
-         
+          scrollToTop();
     }
     showNestedData(packId, 'overview');
   
@@ -211,21 +211,10 @@ function showNestedData(packId, nestedKey) {
               <p>${nestedData}</p>
           </div>`;
           scrollToTop();
-        //   const buttons = document.querySelectorAll('.overView');
-        //   buttons.forEach(button => {
-        //     button.style.color="red"
-        //   });
-
-        //   // Add 'active' class to the clicked button
-        //   const activeButton = document.querySelector(`.overView[data-key="${nestedKey}"]`);
-        //   if (activeButton) {
-        //     activeButton.style.color=
-        //   }
+       
     }
-    // setTimeout(function() {
-    //   document.querySelector('.i4ewOd-pzNkMb-r4nke-LS81yb').style.display = 'none';
-    //   alert('gggg')
-    // }, 5000);
+   
+   
     
 }
 
@@ -236,6 +225,7 @@ const cardContainer = document.querySelector('.card-container');
 const cards = document.querySelectorAll('.card');
 
 function nextSlide() {
+  
     currentIndex = Math.min(currentIndex + 1, cards.length - 4);
     updateVisibility();
 }
@@ -246,6 +236,7 @@ function prevSlide() {
 }
 
 function updateVisibility() {
+ 
     const translateValue = currentIndex * -(270 + 24);
     cardContainer.style.transform = `translateX(${translateValue}px)`;
 }
