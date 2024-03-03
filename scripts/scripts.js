@@ -5,24 +5,9 @@ document.addEventListener("DOMContentLoaded", function () {
     loader.style.display = "none";
   }
 
-  const navbar = document.getElementById("navbar");
-  const navLinks = document.querySelector("#navbar ul");
-  const hamburgerBtn = document.getElementById("hamburger-btn");
-  const closeBtn = document.getElementById("close-btn");
+ 
 
-  if (hamburgerBtn && closeBtn && navLinks) {
-    hamburgerBtn.addEventListener("click", function () {
-      navLinks.classList.toggle("show");
-      hamburgerBtn.style.display = "none";
-      closeBtn.style.display = "block";
-    });
-
-    closeBtn.addEventListener("click", function () {
-      navLinks.classList.remove("show");
-      hamburgerBtn.style.display = "block";
-      closeBtn.style.display = "none";
-    });
-  }
+  
 });
 
 function showPage(pageId) {
@@ -41,8 +26,28 @@ function showPage(pageId) {
             <div>${pageContent.data6}</div>
         `;
     scrollToTop();
+    closeMenu();
+
+   
   }
   // scrollToTop();
+  
+}
+const navbar = document.getElementById("navbar");
+const navLinks = document.querySelector("#navbar ul");
+const hamburgerBtn = document.getElementById("hamburger-btn");
+const closeBtn = document.getElementById("close-btn");
+
+function openMenu() {
+  navLinks.classList.toggle("show");
+  hamburgerBtn.style.display = "none";
+  closeBtn.style.display = "block";
+}
+
+function closeMenu() {
+  navLinks.classList.remove("show");
+  hamburgerBtn.style.display = "block";
+  closeBtn.style.display = "none";
 }
 function showPackges(packId) {
   const packData = packagesData[packId];
@@ -220,18 +225,25 @@ const cardContainer = document.querySelector(".card-container");
 const cards = document.querySelectorAll(".card");
 
 function nextSlide() {
+  const cardContainer = document.querySelector(".card-container");
+const cards = document.querySelectorAll(".card");
   currentIndex = Math.min(currentIndex + 1, cards.length - 4);
   updateVisibility();
+  
 }
 
 function prevSlide() {
   currentIndex = Math.max(currentIndex - 1, 0);
   updateVisibility();
+  
 }
 
 function updateVisibility() {
+  const cardContainer = document.querySelector(".card-container");
+const cards = document.querySelectorAll(".card");
   const translateValue = currentIndex * -(270 + 24);
   cardContainer.style.transform = `translateX(${translateValue}px)`;
+  
 }
 
 async function shareContent() {
@@ -239,9 +251,9 @@ async function shareContent() {
     // Check if the Web Share API is supported
     if (navigator.share) {
       await navigator.share({
-        title: "Your shared content title",
-        text: "Your shared content description",
-        url: "https://your-website.com",
+        title: "Ladakh Gateway Travel",
+        text: "Discover the Best Great Tourism destinations, breathtaking views, and unique cultural experiences. Plan your adventure now!",
+        url: "https://ladakhthrill.com",
       });
       console.log("Shared successfully");
     } else {
@@ -257,10 +269,26 @@ function scrollToTop() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
 }
-
 function submitForm() {
   if (validateForm()) {
     showSuccessPopup();
+    sendFormData();
+  }
+
+  function sendFormData() {
+    var formData = new FormData(document.getElementById("myForm"));
+    var xhr = new XMLHttpRequest();
+
+    xhr.open("POST", "connect.php", true);
+
+    xhr.onreadystatechange = function () {
+      if (xhr.readyState == 4 && xhr.status == 200) {
+        console.log(xhr.responseText);
+        // You can add additional logic here based on the server response
+      }
+    };
+
+    xhr.send(formData);
   }
 }
 
@@ -276,6 +304,8 @@ function validateForm() {
     }, 3000);
     return false;
   }
+
+  // Assuming you want to show the contact page if the form is valid
   showPage("contact");
   return true;
 }
@@ -285,8 +315,7 @@ function showSuccessPopup() {
   successPopup.style.display = "flex";
   setTimeout(function () {
     successPopup.style.display = "none";
-  }, 2000); // Hide popup after 3 seconds
-  // showPage('contact')
+  }, 2000); // Hide popup after 2 seconds
 }
 
 

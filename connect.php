@@ -1,47 +1,24 @@
 <?php
-// Replace these variables with your actual database credentials
-$servername = "srv1326.hstgr.io";
-$username = "u643722725_root";
-$password = "3#MyEysSl*";
-$database = "u643722725_registration";
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  $name = $_POST["name"];
+  $email = $_POST["email"];
+  $phone = $_POST["phone"];
+  $comments = $_POST["comments"];
 
-// Create connection
-$conn = new mysqli($servername, $username, $password, $database);
+  // Customize the email content
+  $to = "support@ladakhthrill.com"; // Replace with your email address
+  $subject = "New Form Submission";
+  $message = "Name: $name\nEmail: $email\nPhone: $phone\n\nMessage:\n$comments";
+  $headers = "From: $email\r\n";
+  $headers .= "Reply-To: $email\r\n";
 
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
+  // Send the email
+  mail($to, $subject, $message, $headers);
 
-// Function to sanitize and validate input
-function cleanInput($data) {
-    $data = trim($data);
-    $data = stripslashes($data);
-    $data = htmlspecialchars($data);
-    return $data;
-}
-
-// Get form data
-$name = cleanInput($_POST['name']);
-$email = cleanInput($_POST['email']);
-$phone = cleanInput($_POST['phone']);
-$comments = cleanInput($_POST['comments']);
-
-// SQL query with prepared statement to insert data into the table
-$sql = "INSERT INTO ContactTravel (name, email, phone, comments) VALUES (?, ?, ?, ?)";
-
-// Prepare and bind parameters
-$stmt = $conn->prepare($sql);
-$stmt->bind_param("ssss", $name, $email, $phone, $comments);
-
-// Execute the statement
-if ($stmt->execute()) {
-    echo "Form data stored successfully!";
+  // You can customize the response message sent back to the client
+  echo "Form submitted successfully!";
 } else {
-    echo "Error: Unable to store form data";
+  // Handle invalid request
+  echo "Invalid request";
 }
-
-// Close statement and connection
-$stmt->close();
-$conn->close();
 ?>
