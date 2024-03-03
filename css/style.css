@@ -1528,4 +1528,9 @@ color: red;
   .megaStar{
     margin-top: 2% !important;
   }
+  #navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
