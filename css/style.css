@@ -1,23 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 body {
   font-family: "Montserrat", sans-serif !important;
   font-optical-sizing: auto;
- 
-  font-style: normal;
 
+  font-style: normal;
 }
 
 nav {
   background-color: #043662;
   color: white;
-
 }
-.logo{
+.logo {
   font-family: "Montserrat", sans-serif !important;
   font-optical-sizing: auto;
- 
-  font-style: normal;
 
+  font-style: normal;
 }
 
 ul {
@@ -37,7 +34,6 @@ li {
   align-items: center;
   text-decoration: none;
   padding: 10px;
-
 }
 
 li:hover {
@@ -58,7 +54,6 @@ li a {
   height: auto;
 }
 
-
 #loader {
   position: fixed;
   top: 0;
@@ -74,7 +69,7 @@ li a {
 
 /* Add a loading spinner or any other loader animation */
 #loader::after {
-  content: '';
+  content: "";
   border: 6px solid #333;
   border-radius: 50%;
   border-top: 6px solid #fff;
@@ -93,14 +88,10 @@ li a {
   }
 }
 
-
-
-
 #navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-
 }
 
 ul {
@@ -108,10 +99,7 @@ ul {
   margin: 0;
   padding: 0;
   display: flex;
-
 }
-
-
 
 #hamburger-btn {
   display: none;
@@ -124,7 +112,6 @@ ul {
   cursor: pointer;
   font-size: 1.5em;
   color: #333;
-
 }
 
 .bRight {
@@ -138,7 +125,6 @@ ul {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-
 }
 
 .bannerDesc {
@@ -178,7 +164,6 @@ ul {
   width: 15% !important;
   background-size: contain;
   height: 300px;
-
 }
 
 .homeDecor2 {
@@ -192,7 +177,6 @@ ul {
   padding: 30px;
   width: 15% !important;
   height: 300px;
-
 }
 
 .homeDecor3 {
@@ -206,7 +190,6 @@ ul {
   background-size: contain;
   width: 15% !important;
   height: 300px;
-
 }
 
 .homeDecor4 {
@@ -220,7 +203,6 @@ ul {
   padding: 30px;
   width: 15% !important;
   height: 300px;
-
 }
 
 .homeDecor5 {
@@ -234,7 +216,6 @@ ul {
   padding: 30px;
   width: 15% !important;
   height: 300px;
-
 }
 
 .bannerhightlitedText {
@@ -250,7 +231,6 @@ button.viewDestn {
   font-size: 14px;
   background-color: #fff;
   border: none;
-
 }
 
 .tourtext {
@@ -309,21 +289,20 @@ button.joinAdventure:hover {
   margin: 0 auto !important;
   padding: 2%;
 }
-.ExploreheroBanner{
+.ExploreheroBanner {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   flex-direction: column;
-
 }
-.exploreHead{
+.exploreHead {
   font-size: 45px;
   color: #fff;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   margin: 0;
 }
-.subtitletExt{
+.subtitletExt {
   font-size: 30px;
   color: #fff;
   margin: 0;
@@ -331,14 +310,12 @@ button.joinAdventure:hover {
 
 /* css for intro END*/
 
-
 /* shooterBanner css atRT */
 .shortData3 {
   background-image: url(../assets/flakstad_pano.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-
 }
 
 .fa-solid,
@@ -381,7 +358,6 @@ p.iconsPara {
   box-sizing: border-box;
 }
 
-
 .carousel-button {
   background: none;
   border: none;
@@ -416,7 +392,6 @@ p.iconsPara {
   flex: 0 0 282px;
   box-sizing: border-box;
   text-align: center;
-
 }
 
 .card-img-top {
@@ -519,7 +494,6 @@ h5.card-title {
 
 /* packges  end */
 
-
 /* extraSomeOne */
 .NameTrip {
   color: #fff;
@@ -576,10 +550,10 @@ ul.listData li {
   display: block !important;
   margin-right: 0;
   color: #043662;
-  text-indent: -.8em;
+  text-indent: -0.8em;
 }
 
-.list-group-item+.list-group-item {
+.list-group-item + .list-group-item {
   height: auto;
   text-align: start;
 }
@@ -597,24 +571,22 @@ p.card-title.stayNamer {
   font-size: 15px;
   line-height: 1;
 }
-a.packgeData{
+a.packgeData {
   background-color: #fff;
-    color: #043662;
-    border: 1px solid #043662;
-    padding: 8px;
-    text-decoration: none;
-    text-align: center;
+  color: #043662;
+  border: 1px solid #043662;
+  padding: 8px;
+  text-decoration: none;
+  text-align: center;
 }
-a.packgeData:hover{
+a.packgeData:hover {
   background-color: #043662;
   color: #fff;
- 
-  
 }
-.lni-star-fill{
+.lni-star-fill {
   color: #ffda39 !important;
 }
-.googleReview{
+.googleReview {
   text-decoration: none;
   color: #01abff;
 }
@@ -628,53 +600,53 @@ p.tourDays {
 /* extraSomeOne */
 /* css for tripDaries */
 .containerZ {
-	max-width: 100rem;
-	margin: 0 auto;
-	/* padding: 0 2rem 2rem; */
+  max-width: 100rem;
+  margin: 0 auto;
+  /* padding: 0 2rem 2rem; */
 }
 
 .heading {
-	font-family: "Montserrat", Arial, sans-serif;
-	font-size: 4rem;
-	font-weight: 500;
-	line-height: 1.5;
-	text-align: center;
-	padding: 3.5rem 0;
-	color: #1a1a1a;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 4rem;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: center;
+  padding: 3.5rem 0;
+  color: #1a1a1a;
 }
 
 .heading span {
-	display: block;
+  display: block;
 }
 
 .gallery {
-	display: flex;
-	flex-wrap: wrap;
-	/* Compensate for excess margin on outer gallery flex items */
-	margin: -1rem -1rem;
+  display: flex;
+  flex-wrap: wrap;
+  /* Compensate for excess margin on outer gallery flex items */
+  margin: -1rem -1rem;
 }
 
 .gallery-item {
-	/* Minimum width of 24rem and grow to fit available space */
-	flex: 1 0 24rem;
-	/* Margin value should be half of grid-gap value as margins on flex items don't collapse */
-	margin: 1rem;
-	box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
-	overflow: hidden;
+  /* Minimum width of 24rem and grow to fit available space */
+  flex: 1 0 24rem;
+  /* Margin value should be half of grid-gap value as margins on flex items don't collapse */
+  margin: 1rem;
+  box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+  overflow: hidden;
 }
 
 .gallery-image {
-	display: block;
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	transition: transform 400ms ease-out;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 400ms ease-out;
 }
 
 .gallery-image:hover {
-	transform: scale(1.15);
+  transform: scale(1.15);
 }
-.i4ewOd-pzNkMb-tJHJj{
+.i4ewOd-pzNkMb-tJHJj {
   display: none !important;
 }
 .SfQLQb-QClCJf-giiMnc .i4ewOd-pzNkMb-tJHJj {
@@ -689,33 +661,52 @@ Remove or comment-out the code block below to see how the browser will fall-back
 */
 
 @supports (display: grid) {
-	.gallery {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
-		grid-gap: 2rem;
-	}
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+    grid-gap: 2rem;
+  }
 
-	.gallery,
-	.gallery-item {
-		margin: 0;
-	}
+  .gallery,
+  .gallery-item {
+    margin: 0;
+  }
 }
 
 /* css for tripDaries */
 
-
-
 /* css for WHY us  start*/
-.whyUSBanner{
+.whyUSBanner {
   background-image: url(../assets/WhyUS.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
-.whyPara{
+.whyPara {
   margin-left: 15px;
 }
-.lni-world,.lni-briefcase,.lni-taxi,.lni-travel,.lni-grow,.lni-travel,.lni-apartment,.lni-scooter,.lni-bi-cycle,.lni-dinner,.lni-ship,.lni-pyramids,.lni-instagram,.lni-whatsapp,.lni-envelope,.lni-phone,.lni-cool,.lni-travel,.lni-cog,.lni-map,.lni-home,.lni-mobile{
+.lni-world,
+.lni-briefcase,
+.lni-taxi,
+.lni-travel,
+.lni-grow,
+.lni-travel,
+.lni-apartment,
+.lni-scooter,
+.lni-bi-cycle,
+.lni-dinner,
+.lni-ship,
+.lni-pyramids,
+.lni-instagram,
+.lni-whatsapp,
+.lni-envelope,
+.lni-phone,
+.lni-cool,
+.lni-travel,
+.lni-cog,
+.lni-map,
+.lni-home,
+.lni-mobile {
   font-size: 32px !important;
 }
 p.whymainHead {
@@ -727,13 +718,11 @@ p.headtWhy {
 }
 
 @supports (display: grid) {
-	.galleryZ {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
-		grid-gap: 0rem;
-	}
-
-	
+  .galleryZ {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+    grid-gap: 0rem;
+  }
 }
 .headingZ {
   font-size: 2rem;
@@ -745,69 +734,62 @@ p.headtWhy {
 }
 /* css for WHY us  END*/
 
-
 /* css for services start */
-.bgServices{
+.bgServices {
   background-image: url(../assets/ppobanner.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding: .5%;
+  padding: 0.5%;
 }
-.subtitleservicesMain{
+.subtitleservicesMain {
   font-size: 13px;
-  
 }
-.headMainservices{
+.headMainservices {
   font-size: 18px;
   font-weight: 400;
-  
 }
-.columbs{
+.columbs {
   background-color: #fff;
   color: #043662;
   cursor: pointer;
   /* margin-left: 10px; */
- 
 }
-.columbs:hover{
+.columbs:hover {
   background-color: #043662;
   color: #fff;
 }
-.servicesPage{
+.servicesPage {
   font-size: 28px;
   color: #043662;
   font-weight: 400;
 }
 /* css for services END*/
 
-
 /* css for exploreLadakh start */
-.exploreabnner{
+.exploreabnner {
   background-image: url(../assets/prateek-katyal-JoIx9FWaX38-unsplash.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   padding: 10%;
 }
-.mattherExplore{
+.mattherExplore {
   display: grid;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
-.exploreTexter{
+.exploreTexter {
   font-size: 17px;
   color: #043662;
   margin: 0 auto;
   width: 50%;
-
 }
-.heatdExplorematch{
+.heatdExplorematch {
   font-size: 30px;
   color: #043662;
   font-weight: 400;
-  
 }
 
 .custom-box {
@@ -822,32 +804,31 @@ p.headtWhy {
   border-radius: 5px;
 }
 .box1 {
-  background-image: url('../assets/amrita-ghanty-7xzdTz9R-Yg-unsplash.jpg');
+  background-image: url("../assets/amrita-ghanty-7xzdTz9R-Yg-unsplash.jpg");
 }
 .box2 {
-  background-image: url('../assets/Bike-Tour.jpg');
+  background-image: url("../assets/Bike-Tour.jpg");
 }
 .box3 {
-  background-image: url('../assets/md-efthakhar-ui-alam-JJlohVR7n8Q-unsplash.jpg');
+  background-image: url("../assets/md-efthakhar-ui-alam-JJlohVR7n8Q-unsplash.jpg");
 }
 .box4 {
-  background-image: url('../Backup/IMG-20240116-WA0019.jpg');
+  background-image: url("../Backup/IMG-20240116-WA0019.jpg");
 }
 .box5 {
-  background-image: url('../Backup/IMG-20240116-WA0011.jpg');
+  background-image: url("../Backup/IMG-20240116-WA0011.jpg");
 }
 .box6 {
-  background-image: url('../Backup/IMG-20240116-WA0035.jpg');
+  background-image: url("../Backup/IMG-20240116-WA0035.jpg");
 }
-.newsBakker{
+.newsBakker {
   background-image: url(../assets/Japan.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 1%;
-  
 }
-.btnNews{
+.btnNews {
   font-size: 26px;
   color: #fff;
   background-color: #043662;
@@ -859,96 +840,99 @@ p.headtWhy {
   border-radius: 5px;
 }
 .box12 {
-  background-image: url('../Backup/IMG-20240116-WA0028.jpg');
+  background-image: url("../Backup/IMG-20240116-WA0028.jpg");
 }
 .box22 {
-  background-image: url('../Backup/IMG-20240116-WA0037.jpg');
+  background-image: url("../Backup/IMG-20240116-WA0037.jpg");
 }
 .box32 {
-  background-image: url('../Backup/IMG-20240116-WA0029.jpg');
+  background-image: url("../Backup/IMG-20240116-WA0029.jpg");
 }
 .box42 {
-  background-image: url('../Backup/IMG-20240116-WA0012.jpg');
+  background-image: url("../Backup/IMG-20240116-WA0012.jpg");
 }
 .box52 {
-  background-image: url('../Backup/IMG-20240116-WA0033.jpg');
+  background-image: url("../Backup/IMG-20240116-WA0033.jpg");
 }
 .box62 {
-  background-image: url('../assets/rishikesh-u-K4Th0pOUpzI-unsplash.jpg');
+  background-image: url("../assets/rishikesh-u-K4Th0pOUpzI-unsplash.jpg");
 }
-.pesonaKabber{
+.pesonaKabber {
   background-image: url(../assets/accordion-bg.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   /* padding: 2%tre; */
 }
-.pesonNammmer{
+.pesonNammmer {
   font-size: 20px;
   font-weight: 400;
   color: #043662;
 }
 /* css for exploreLadakh end */
 /* about us css   start*/
-.aboutUS{
+.aboutUS {
   font-size: 30px;
   color: #043662;
 }
-.lni-instagram,.lni-whatsapp,.lni-envelope,.malller{
+.lni-instagram,
+.lni-whatsapp,
+.lni-envelope,
+.malller {
   cursor: pointer;
 }
-.lni-instagram:hover{
-color: red;
+.lni-instagram:hover {
+  color: red;
 }
-.lni-whatsapp:hover{
-  color: green;
+.lni-whatsapp:hover {
+  color: #4BCB5C;
 }
-.malller:hover{
+.malller:hover {
   color: #043662;
   text-decoration: underline;
 }
-.lixonsZ{
+.lixonsZ {
   font-size: 12px !important;
 }
 .box123 {
-  background-image: url('../Backup/IMG-20240116-WA0016.jpg');
+  background-image: url("../Backup/IMG-20240116-WA0016.jpg");
 }
 .box223 {
-  background-image: url('../Backup/IMG-20240116-WA0015.jpg');
+  background-image: url("../Backup/IMG-20240116-WA0015.jpg");
 }
 .box323 {
-  background-image: url('../Backup/IMG-20240116-WA0013.jpg');
+  background-image: url("../Backup/IMG-20240116-WA0013.jpg");
 }
 .box423 {
-  background-image: url('../assets/hemis.jpg');
+  background-image: url("../assets/hemis.jpg");
 }
 .box523 {
-  background-image: url('../assets/alchi-monastry.jpg');
+  background-image: url("../assets/alchi-monastry.jpg");
 }
 .box623 {
-  background-image: url('../assets/Likir-monastery-leh.jpg');
+  background-image: url("../assets/Likir-monastery-leh.jpg");
 }
 /* new */
 .box1234 {
-  background-image: url('../Backup/IMG-20240116-WA0024.jpg');
+  background-image: url("../Backup/IMG-20240116-WA0024.jpg");
 }
 .box2234 {
-  background-image: url('../assets/river-rafting-ladakh2.jpg');
+  background-image: url("../assets/river-rafting-ladakh2.jpg");
 }
 .box3234 {
-  background-image: url('../assets/camping.jpg');
+  background-image: url("../assets/camping.jpg");
 }
 .box4234 {
-  background-image: url('../assets/Shopping-Places-in-Leh-Ladakh.jpg');
+  background-image: url("../assets/Shopping-Places-in-Leh-Ladakh.jpg");
 }
 .box5234 {
-  background-image: url('../assets/culture.jpg');
+  background-image: url("../assets/culture.jpg");
 }
 .box6234 {
-  background-image: url('../assets/para.webp');
+  background-image: url("../assets/para.webp");
 }
-.aboutUSZ{
-  background-image: url('../assets/carousel3.jpg');
+.aboutUSZ {
+  background-image: url("../assets/carousel3.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -957,12 +941,12 @@ color: red;
   justify-content: center;
   align-items: center;
 }
-.aboutUS{
+.aboutUS {
   font-size: 40px;
   color: #fff;
   padding: 1%;
 }
-.viewAboutDest{
+.viewAboutDest {
   border: 1px solid #043662;
   padding: 1%;
   font-size: 15px;
@@ -970,41 +954,41 @@ color: red;
   background-color: #fff;
   color: #043662;
 }
-.viewAboutDest:hover{
+.viewAboutDest:hover {
   background-color: #043662;
   color: #fff;
 }
-.plannerAbout h4{
+.plannerAbout h4 {
   font-size: 18px;
 }
-.cunnefaker{
+.cunnefaker {
   margin-right: 8%;
 }
-.nukSucss{
+.nukSucss {
   color: #01abff;
   font-weight: 500;
   font-size: 25px;
   text-align: center;
 }
-.namerFake{
+.namerFake {
   color: #043662;
   font-size: 18px;
 }
-.explreabouter{
+.explreabouter {
   font-size: 30px;
   color: #043662;
 }
-.campngImg{
+.campngImg {
   width: 100%;
 }
-.elfsight-app-087f742d-fe4a-4ee5-b9d1-2adab9a5c7e3 a{
+.elfsight-app-087f742d-fe4a-4ee5-b9d1-2adab9a5c7e3 a {
   display: none !important;
 }
 /* about us css end  */
 /* form css start */
 #success-popup {
   display: none;
- 
+
   color: #043662;
   padding: 15px;
   border-radius: 5px;
@@ -1015,9 +999,9 @@ color: red;
   transform: translateX(-50%);
   z-index: 999;
 }
-#fail-popup{
+#fail-popup {
   display: none;
- 
+
   color: #043662;
   padding: 15px;
   border-radius: 5px;
@@ -1028,31 +1012,31 @@ color: red;
   transform: translateX(-50%);
   z-index: 999;
 }
-.form-control{
+.form-control {
   border: 1px solid #043662 !important;
- 
 }
-.addresnamer,.addresnamer{
+.addresnamer,
+.addresnamer {
   cursor: pointer;
 }
-.addresnamer{
+.addresnamer {
   /* font-size: 18px; */
   font-weight: 500;
   color: #043662;
 }
-.sutttle{
+.sutttle {
   font-size: 15px;
   color: #043662;
   line-height: 1.2;
 }
-.contactusbanner{
-  background-image: url('../assets/accordion-bg.jpg');
+.contactusbanner {
+  background-image: url("../assets/accordion-bg.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 3%;
 }
-.SubmitPerson{
+.SubmitPerson {
   color: #043662;
   background-color: #fff;
   font-size: 20px;
@@ -1060,25 +1044,25 @@ color: red;
   padding: 5px;
   width: 15%;
 }
-.SubmitPerson:hover{
+.SubmitPerson:hover {
   background-color: #043662;
   color: #fff;
 }
-.adlocals{
+.adlocals {
   display: grid;
   justify-content: center;
   align-items: center;
   place-content: center;
 }
-.CONTACuS{
+.CONTACuS {
   color: #043662;
 }
-.getTouch{
+.getTouch {
   font-size: 20px;
   font-weight: 500;
   color: #043662;
 }
-.fooLinksNav{
+.fooLinksNav {
   cursor: pointer;
 }
 
@@ -1087,9 +1071,8 @@ color: red;
 } */
 /* form css start */
 
-
 /* travel gide css start */
-.theUnlimtedGuide{
+.theUnlimtedGuide {
   background-image: url(../assets/camelride.webp);
   background-repeat: no-repeat;
   background-position: center;
@@ -1098,187 +1081,200 @@ color: red;
   display: grid;
   align-items: center;
 }
-.Guidetravel{
+.Guidetravel {
   font-size: 40px;
- font-weight: 500;
- color: #043662;
+  font-weight: 500;
+  color: #043662;
 }
-.box12Leh{
+.box12Leh {
   background-image: url(../assets/Shopping-Places-in-Leh-Ladakh.jpg);
 }
-.box22Leh{
+.box22Leh {
   background-image: url(../assets/cFE.webp);
 }
-.box32Leh{
+.box32Leh {
   background-image: url(../assets/siteSeeing.webp);
 }
-.box42Leh{
+.box42Leh {
   background-image: url(../assets/DSC_0035.JPG);
 }
-.box52Leh{
+.box52Leh {
   background-image: url(../assets/DSC_0055.JPG);
 }
-.box62Leh{
+.box62Leh {
   background-image: url(../Backup/IMG-20240116-WA0023.jpg);
 }
-.connectER{
+.connectER {
   background-color: #fff;
   color: #043662;
   font-size: 20px;
   border: 1px solid #043662;
 }
-.connectER:hover{
+.connectER:hover {
   background-color: #043662;
   color: #fff;
 }
-.innerOffer{
+.innerOffer {
   color: #043662;
   font-size: 35px;
 }
-.box1Show{
+.box1Show {
   background-image: url(../Backup/IMG-20240116-WA0007.jpg);
 }
-.box2Show{
+.box2Show {
   background-image: url(../Backup/IMG-20240116-WA0024.jpg);
 }
-.box3Show{
+.box3Show {
   background-image: url(../assets/IMG_1159.JPG);
 }
-.box4Show{
+.box4Show {
   background-image: url(../assets/P1140468.JPG);
 }
-.box5Show{
+.box5Show {
   background-image: url(../assets/P1140426.JPG);
 }
-.box6Show{
+.box6Show {
   background-image: url(../assets/\/DSC_0962.JPG);
 }
-.ustffier{
+.ustffier {
   display: flex;
   flex-direction: column;
   justify-content: center;
 
- place-content: center;
- text-align: center;
- line-height: 1;
+  place-content: center;
+  text-align: center;
+  line-height: 1;
 }
-.lofAdresmaker{
+.lofAdresmaker {
   color: #fff;
   font-size: 30px;
   font-weight: 500;
   line-height: 1;
   margin: 0;
 }
-.subtMakker{
+.subtMakker {
   font-size: 25px;
   color: #fff;
   margin: 0;
   line-height: 1;
 }
-.nannerZZ{
+.nannerZZ {
   font-size: 25px;
   color: #043662;
   font-weight: 500;
 }
-.i4ewOd-pzNkMb-tJHJj{
+.i4ewOd-pzNkMb-tJHJj {
   display: none !important;
 }
-.box1Sham{
+.box1Sham {
   background-image: url(../assets/ShamValley/spituk-monsatery3.jpg);
 }
-.box2Sham{
+.box2Sham {
   background-image: url(../assets/ShamValley/Magnetic-Hill.webp);
 }
-.box3Sham{
+.box3Sham {
   background-image: url(../assets/ShamValley/Spituk_Gustor_Festival_6-Goutam-1962.webp);
 }
-.box4Sham{
+.box4Sham {
   background-image: url(../Backup/IMG-20240116-WA0015.jpg);
 }
-.box5Sham{
+.box5Sham {
   background-image: url(../Backup/IMG-20240116-WA0035.jpg);
 }
-.box6Sham{
+.box6Sham {
   background-image: url(../assets/Apricot-Blossom-Festival-2.jpg);
 }
-.box1Nub{
+.box1Nub {
   background-image: url(../assets/Nubra/gompaNubra.jpg);
 }
-.box2Nub{
-background-image: url(../assets/Nubra/Diskit-Gompa_14th-dec.webp);
+.box2Nub {
+  background-image: url(../assets/Nubra/Diskit-Gompa_14th-dec.webp);
 }
-.box3Nub{
+.box3Nub {
   background-image: url(../assets/Nubra/Panamik-Village_14th-dec.webp);
 }
-.box4Nub{
+.box4Nub {
   background-image: url(../assets/Nubra/Hunder-sand-dunes_14th-dec.webp);
-}.box5Nub{
-  background-image: url(../assets/Nubra/Maitreya_Buddha\,_Ladakh.jpg);
 }
-.box6Nub{
+.box5Nub {
+  background-image: url(../assets/Nubra/Maitreya_Buddha\_Ladakh.jpg);
+}
+.box6Nub {
   background-image: url(../assets/camping.jpg);
 }
-.box1Zan{
+.box1Zan {
   background-image: url(../assets/Zanskar/P1140729.JPG);
 }
-.box2Zan{
+.box2Zan {
   background-image: url(../assets/Zanskar/phuktal.jpg);
 }
-.box3Zan{
+.box3Zan {
   background-image: url(../assets/Zanskar/wildLife.JPG);
 }
-.box4Zan{
+.box4Zan {
   background-image: url(../assets/Zanskar/DSC_5386.JPG);
 }
-.box5Zan{
+.box5Zan {
   background-image: url(../assets/Zanskar/99.webp);
 }
-.box6Zan{
+.box6Zan {
   background-image: url(../assets/Zanskar/GOPR1124.JPG);
 }
-.box1Chang{
+.box1Chang {
   background-image: url(../assets/chnagthnag/pangong-lake-ladakh3.jpg);
 }
-.box2Chang{
+.box2Chang {
   background-image: url(../assets/chnagthnag/hanle.jpg);
 }
-.box3Chang{
+.box3Chang {
   background-image: url(../assets/chnagthnag/chumathnag.jpeg);
 }
-.box4Chang{
+.box4Chang {
   background-image: url(../assets/chnagthnag/korzok.jpg);
 }
-.box5Chang{
+.box5Chang {
   background-image: url(../assets/chnagthnag/nomadic.jpg);
 }
-.box6Sham{
+.box6Sham {
   background-image: url(../assets/chnagthnag/tanglang-la.jpg);
 }
-.box1Gom{
+.box1Gom {
   background-image: url(../assets/monastries/hemis.webp);
 }
-.box2Gom{
-background-image: url(../assets/monastries/Matho_Monastery.webp);
+.box2Gom {
+  background-image: url(../assets/monastries/Matho_Monastery.webp);
 }
-.box3Gom{
-background-image: url(../assets/monastries/Rangdum_Gompa.JPG);
+.box3Gom {
+  background-image: url(../assets/monastries/Rangdum_Gompa.JPG);
 }
-.box4Gom{
-background-image: url(../assets/monastries/stanka.webp);
+.box4Gom {
+  background-image: url(../assets/monastries/stanka.webp);
 }
-.box5Gom{
-background-image: url(../assets/monastries/Rizong_Maitreya.webp);
+.box5Gom {
+  background-image: url(../assets/monastries/Rizong_Maitreya.webp);
 }
-.box6Gom{
-background-image: url(../assets/monastries/thinksey.webp);
+.box6Gom {
+  background-image: url(../assets/monastries/thinksey.webp);
+}
+.fabLink{
+  text-decoration: none;
+  color: #fff;
+}
+.lni-facebook-oval,.lni-instagram-original,.whatpper{
+  font-size: 27px !important;
+  cursor: pointer;
+}
+.lni-instagram-original:hover{
+color: red;
+}
+.lni-facebook-oval:hover{
+  color: #01abff;
 }
 /* travel gide css  end*/
 
-
-@media only screen and (min-width:640px) {
+@media only screen and (min-width: 640px) {
   #hamburger-btn {
     display: none !important;
-
   }
 
   .mobileView {
@@ -1289,39 +1285,36 @@ background-image: url(../assets/monastries/thinksey.webp);
   .mobile2 {
     justify-content: end !important;
   }
-  .columbs{
+  .columbs {
     width: 24% !important;
   }
-  .explreLdakhBanner{
+  .explreLdakhBanner {
     height: 500px !important;
   }
-  .explorebannerImg{
+  .explorebannerImg {
     height: 600px;
-   
-
   }
-  .bikeHero{
+  .bikeHero {
     display: flex;
-    
+
     align-items: center;
   }
-  .fixemob{
+  .fixemob {
     margin-top: 2% !important;
   }
-  .bikeHero{
+  .bikeHero {
     display: flex;
     justify-content: center;
   }
-  .fixemob2{
+  .fixemob2 {
     margin-top: 5%;
   }
-  .plannerNews{
+  .plannerNews {
     margin-top: 0;
   }
 }
 
-@media only screen and (max-width:1025px)and (orientation:portrait) {
-
+@media only screen and (max-width: 1025px) and (orientation: portrait) {
   .homeDecor,
   .homeDecor2,
   .homeDecor3,
@@ -1342,18 +1335,16 @@ background-image: url(../assets/monastries/thinksey.webp);
   .bannerHightLited {
     margin-top: -8% !important;
   }
-  li{
+  li {
     font-size: 14px;
   }
 }
-@media only screen and (max-width:820px) and (orientation:portrait){
-  .bannerhightlitedText{
+@media only screen and (max-width: 820px) and (orientation: portrait) {
+  .bannerhightlitedText {
     font-size: 20px;
   }
- 
 }
-@media only screen and (max-width:768px)and (orientation:portrait) {
-
+@media only screen and (max-width: 768px) and (orientation: portrait) {
   .homeDecor,
   .homeDecor2,
   .homeDecor3,
@@ -1450,7 +1441,6 @@ background-image: url(../assets/monastries/thinksey.webp);
 
   .mobileView {
     display: grid;
-
   }
 
   .list-group {
@@ -1463,75 +1453,79 @@ background-image: url(../assets/monastries/thinksey.webp);
   p.popularPages {
     font-size: 28px;
     color: #043662;
-}
-.explorebannerImg{
-  height: auto !important;
-  width: 100%;
-}
-.fixemob{
-  margin-top: 0 !important;
-}
-p.frontlinner{
-  font-size: 25px;
-}
-.linerExplore{
-border: none;
-}
-.fixemob2{
-  margin-top: 5% !important;
-}
-.exploreTexter{
-  width: 100%;
-}
-.plannerNews{
-  margin-top: 30px !important;
-}
-.subtitletExt {
-  font-size: 21px;
-  color: #fff;
-  margin: 0;
-}
-.namerFake {
-  color: #043662;
-  font-size: 11px;
-}
-.adlocals{
-  display: grid;
-  justify-content: start;
-  align-items: center;
-  place-content: start;
-  margin:8% 0 !important;
-}
-.SubmitPerson{
-  width: 100%;
-}
-.fixermob{
-  margin-top: 10px !important;
-}
-#success-popup,#fail-popup{
-  width: 100%;
- left: 50%;
-  top: 9%;
-}
-.Guidetravel {
-  font-size: 32px;
-}
-.innerOffer {
-  color: #043662;
-  font-size: 24px;
-}
-.ustffier{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  }
+  .explorebannerImg {
+    height: auto !important;
+    width: 100%;
+  }
+  .fixemob {
+    margin-top: 0 !important;
+  }
+  p.frontlinner {
+    font-size: 25px;
+  }
+  .linerExplore {
+    border: none;
+  }
+  .fixemob2 {
+    margin-top: 5% !important;
+  }
+  .exploreTexter {
+    width: 100%;
+  }
+  .plannerNews {
+    margin-top: 30px !important;
+  }
+  .subtitletExt {
+    font-size: 21px;
+    color: #fff;
+    margin: 0;
+  }
+  .namerFake {
+    color: #043662;
+    font-size: 11px;
+  }
+  .adlocals {
+    display: grid;
+    justify-content: start;
+    align-items: center;
+    place-content: start;
+    margin: 8% 0 !important;
+  }
+  .SubmitPerson {
+    width: 100%;
+  }
+  .fixermob {
+    margin-top: 10px !important;
+  }
+  #success-popup,
+  #fail-popup {
+    width: 100%;
+    left: 50%;
+    top: 9%;
+  }
+  .Guidetravel {
+    font-size: 32px;
+  }
+  .innerOffer {
+    color: #043662;
+    font-size: 24px;
+  }
+  .ustffier {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
- place-content: center;
- text-align: start;
- line-height: 1;
-}
-.card {
-  flex: 0 0 75%;
+    place-content: center;
+    text-align: start;
+    line-height: 1;
+  }
+  .card {
+    flex: 0 0 75%;
 
-  box-sizing: border-box;
-}
+    box-sizing: border-box;
+  }
+  .megaStar{
+    margin-top: 2% !important;
+  }
 }
