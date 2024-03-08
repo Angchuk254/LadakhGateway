@@ -9,6 +9,9 @@ body {
 nav {
   background-color: #043662;
   color: white;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
 }
 .logo {
   font-family: "Montserrat", sans-serif !important;
@@ -677,7 +680,7 @@ Remove or comment-out the code block below to see how the browser will fall-back
 
 /* css for WHY us  start*/
 .whyUSBanner {
-  background-image: url(../assets/WhyUS.webp);
+  background-image: url(../assets/riderback.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -736,7 +739,7 @@ p.headtWhy {
 
 /* css for services start */
 .bgServices {
-  background-image: url(../assets/ppobanner.jpg);
+  background-image: url(../assets/BACKGENDER.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -761,7 +764,7 @@ p.headtWhy {
 }
 .servicesPage {
   font-size: 28px;
-  color: #043662;
+  color: #fff;
   font-weight: 400;
 }
 /* css for services END*/
@@ -1270,6 +1273,21 @@ color: red;
 .lni-facebook-oval:hover{
   color: #01abff;
 }
+p.offerDiv {
+  font-size: 37px;
+  color: #043662;
+  font-weight: 500;
+}
+.packheading{
+  font-size: 37px;
+  color: #043662;
+  font-weight: 500;
+}
+.skyDrive{
+  font-size: 20px;
+  font-weight: 500;
+  color: #043662;
+}
 /* travel gide css  end*/
 
 @media only screen and (min-width: 640px) {
@@ -1532,5 +1550,8 @@ color: red;
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+  .packheading{
+    font-size: 15px;
   }
 }

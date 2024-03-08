@@ -19,6 +19,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   echo "Form submitted successfully!";
 } else {
   // Handle invalid request
+  alert('gggg')
+
   echo "Invalid request";
 }
 ?>
