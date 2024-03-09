@@ -16,6 +16,7 @@ nav {
 .logo {
   font-family: "Montserrat", sans-serif !important;
   font-optical-sizing: auto;
+  cursor: pointer;
 
   font-style: normal;
 }
@@ -572,7 +573,8 @@ p.popularPages {
 
 p.card-title.stayNamer {
   font-size: 15px;
-  line-height: 1;
+  line-height: 1.2;
+  color: #043662;
 }
 a.packgeData {
   background-color: #fff;
@@ -1289,7 +1291,33 @@ p.offerDiv {
   color: #043662;
 }
 /* travel gide css  end*/
-
+/* packagescss */
+.markerBorder{
+  border: 2px solid #043662;
+}
+.nammerTrips {
+  font-size: 30px;
+  margin: 0;
+  line-height: 1.2;
+}
+.Destnnere{
+  font-weight: 500;
+  color: #043662;
+  margin-top: 20px;
+}
+.markerBorder {
+  border: 2px solid #043662;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.bnnaerpackker{
+  padding-right: 10px;
+}
+.bnnaerpackker{
+  width: 50%;
+}
+/* packagescss */
 @media only screen and (min-width: 640px) {
   #hamburger-btn {
     display: none !important;
@@ -1553,5 +1581,12 @@ p.offerDiv {
   }
   .packheading{
     font-size: 15px;
+  }
+  .bnnaerpackker{
+    width: 100%;
+  }
+  .markerBorder{
+    display: grid;
+    padding-right: 0;
   }
 }

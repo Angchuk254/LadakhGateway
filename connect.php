@@ -1,26 +1,33 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  $name = $_POST["name"];
-  $email = $_POST["email"];
-  $phone = $_POST["phone"];
-  $comments = $_POST["comments"];
+    // Retrieve form data
+    $name = $_POST["name"];
+    $email = $_POST["email"];
+    $phone = $_POST["phone"];
+    $comments = $_POST["comments"];
 
-  // Customize the email content
-  $to = "support@ladakhthrill.com"; // Replace with your email address
-  $subject = "New Form Submission";
-  $message = "Name: $name\nEmail: $email\nPhone: $phone\n\nMessage:\n$comments";
-  $headers = "From: $email\r\n";
-  $headers .= "Reply-To: $email\r\n";
+    // Set recipient email address
+    $to = "recipient@example.com"; // Replace with the desired email address
 
-  // Send the email
-  mail($to, $subject, $message, $headers);
+    // Set email subject
+    $subject = "New Form Submission";
 
-  // You can customize the response message sent back to the client
-  echo "Form submitted successfully!";
+    // Build the email content
+    $message = "Name: $name\n";
+    $message .= "Email: $email\n";
+    $message .= "Phone: $phone\n\n";
+    $message .= "Message:\n$comments";
+
+    // Set additional headers if needed
+    $headers = "From: $email";
+
+    // Send the email
+    if (mail($to, $subject, $message, $headers)) {
+        echo "Email sent successfully!";
+    } else {
+        echo "Failed to send email. Please try again later.";
+    }
 } else {
-  // Handle invalid request
-  alert('gggg')
-
-  echo "Invalid request";
+    echo "Invalid request. Please submit the form.";
 }
 ?>
