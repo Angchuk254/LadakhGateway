@@ -73,7 +73,7 @@ function showPackges(packId) {
                   <h5 class="NameTrip">${packData.title}</h5>
               </div>
               <div class="mobileView  justify-content-between p-0 ">
-                  <div class="connector d-flex col-md-8 col-12 align-content-center ">
+                  <div class="connector d-md-flex d-sm-grid col-md-8 col-12 align-content-center ">
                       <p class="emailIDD loveRate"><i class="lni lni-envelope lixonsZ" onclick="shareContent()"></i> <span
                               class="logEmail" onclick="shareContent()">support@ladakhthrill.com</span></p>
                       <p class="contactDeal"><i class="lni lni-phone lixonsZ"></i>+91 99061 48198</p>
@@ -96,7 +96,7 @@ function showPackges(packId) {
                           onclick="showNestedData('${packId}', 'Gallery')">Travel Diaries</button>
                       <button class="overView" style="border-right: 1px solid grey;"
                           onclick="showNestedData('${packId}', 'FAQs')">FAQs</button>
-                      <button class="overView" onclick="showNestedData('${packId}', 'maps')">Maps</button>
+                       
                       <hr>
                   </div>
               </div>
