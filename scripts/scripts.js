@@ -27,10 +27,10 @@ function showPage(pageId) {
         `;
     scrollToTop();
     closeMenu();
-
+    initializeDrag('.card-container');
    
   }
-  // scrollToTop();
+
   
 }
 const navbar = document.getElementById("navbar");
@@ -52,7 +52,7 @@ function closeMenu() {
 function showPackges(packId) {
   const packData = packagesData[packId];
 
-
+  
   if (packData) {
     const contentData = document.querySelector(".contentData");
     contentData.innerHTML = `
@@ -213,7 +213,7 @@ if (packagesData.pack2===packData) {
   document.querySelector('.pack1Trip').style.backgroundImage = 'url(./assets/para.webp)';
 }
   showNestedData(packId, "overview");
-  
+  initializeDrag('.card-container');
 }
 
 function showNestedData(packId, nestedKey) {
@@ -228,6 +228,7 @@ function showNestedData(packId, nestedKey) {
 
     scrollToTop();
   }
+  
 }
 
 showPage("home");
@@ -266,6 +267,7 @@ async function shareContent() {
         title: "Ladakh Gateway Travel",
         text: "Discover the Best Great Tourism destinations, breathtaking views, and unique cultural experiences. Plan your adventure now!",
         url: "https://ladakhthrill.com",
+        file:'./assets/culture.jpg'
       });
       console.log("Shared successfully");
     } else {
@@ -280,6 +282,7 @@ async function shareContent() {
 function scrollToTop() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+ 
 }
 function submitForm() {
   if (validateForm()) {
@@ -351,49 +354,59 @@ gtag('config', 'G-YN0GVJZQWX');
 
 
 
+function initializeDrag(containerSelector) {
+  let isDragging = false;
+  let startX = 0;
+  let currentX = 0;
 
+  const cardContainer = document.querySelector(containerSelector);
 
-let isDragging = false;
-let startX = 0;
-let currentX = 0;
-
-cardContainer.addEventListener('mousedown', startDrag);
-cardContainer.addEventListener('touchstart', startDrag);
-
-document.addEventListener('mousemove', drag);
-document.addEventListener('touchmove', drag);
-
-document.addEventListener('mouseup', endDrag);
-document.addEventListener('touchend', endDrag);
-
-function startDrag(event) {
-  isDragging = true;
-  startX = event.pageX || event.touches[0].pageX;
-  currentX = startX;
-}
-
-function drag(event) {
-  if (!isDragging) return;
-  const x = event.pageX || event.touches[0].pageX;
-  const deltaX = x - currentX;
-  currentX = x;
-  
-  const newTranslateValue = parseInt(cardContainer.style.transform.split('(')[1]) + deltaX;
-  cardContainer.style.transform = `translateX(${newTranslateValue}px)`;
-}
-
-function endDrag(event) {
-  if (!isDragging) return;
-  isDragging = false;
-  const endX = event.pageX || currentX;
-  const deltaX = endX - startX;
-  
-  if (deltaX > 50) {
-    prevSlide();
-  } else if (deltaX < -50) {
-    nextSlide();
-  } else {
-    // Snap back to current position if movement is small
-    updateVisibility();
+  function startDrag(event) {
+    isDragging = true;
+    startX = event.pageX || event.touches[0].pageX;
+    currentX = startX;
   }
+
+  function drag(event) {
+    if (!isDragging) return;
+    const x = event.pageX || event.touches[0].pageX;
+    const deltaX = x - currentX;
+    currentX = x;
+
+    const newTranslateValue =
+      parseInt(cardContainer.style.transform.split('(')[1]) + deltaX;
+    cardContainer.style.transform = `translateX(${newTranslateValue}px)`;
+  }
+
+  function endDrag(event) {
+    if (!isDragging) return;
+    isDragging = false;
+    const endX = event.pageX || currentX;
+    const deltaX = endX - startX;
+
+    if (deltaX > 50) {
+      prevSlide();
+    } else if (deltaX < -50) {
+      nextSlide();
+    } else {
+      // Snap back to current position if movement is small
+      updateVisibility();
+    }
+  }
+
+  cardContainer.addEventListener('mousedown', startDrag);
+  cardContainer.addEventListener('touchstart', startDrag);
+
+  document.addEventListener('mousemove', drag);
+  document.addEventListener('touchmove', drag);
+
+  document.addEventListener('mouseup', endDrag);
+  document.addEventListener('touchend', endDrag);
 }
+
+// Call initializeDrag with the appropriate container selector
+initializeDrag('.card-container');
+
+
+
+

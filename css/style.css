@@ -5,7 +5,24 @@ body {
 
   font-style: normal;
 }
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
 
+.my-float{
+	margin-top:16px;
+}
 nav {
   background-color: #043662;
   color: white;
@@ -1102,7 +1119,7 @@ p.headtWhy {
   background-image: url(../assets/siteSeeing.webp);
 }
 .box42Leh {
-  background-image: url(../assets/DSC_0035.JPG);
+  background-image: url(../assets/monastries/stanka.webp);
 }
 .box52Leh {
   background-image: url(../assets/DSC_0055.JPG);
@@ -1604,7 +1621,7 @@ p.offerDiv {
   border: none;
   font-size: 15px;
 }
-.theUnlimtedGuide{
+.theUnlimtedGuide,.aboutUSZ,.fixerZZZ{
   padding: 20%;
 }
 }
