@@ -5,7 +5,24 @@ body {
 
   font-style: normal;
 }
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
 
+.my-float{
+	margin-top:16px;
+}
 nav {
   background-color: #043662;
   color: white;
@@ -358,7 +375,7 @@ p.iconsPara {
 
 .card {
   flex: 0 0 25%;
-
+  cursor: pointer;
   box-sizing: border-box;
 }
 
@@ -396,6 +413,7 @@ p.iconsPara {
   flex: 0 0 282px;
   box-sizing: border-box;
   text-align: center;
+ 
 }
 
 .card-img-top {
@@ -658,14 +676,13 @@ p.tourDays {
 .SfQLQb-QClCJf-giiMnc .i4ewOd-pzNkMb-tJHJj {
   height: 40px;
 }
-/*
+.subtitlewhyus{
+  color: #043662;
+}
 
-The following rule will only run if your browser supports CSS grid.
-
-Remove or comment-out the code block below to see how the browser will fall-back to flexbox styling. 
-
-*/
-
+.h3, h3 {
+  font-size: 1.5rem !important;
+}
 @supports (display: grid) {
   .gallery {
     display: grid;
@@ -683,7 +700,7 @@ Remove or comment-out the code block below to see how the browser will fall-back
 
 /* css for WHY us  start*/
 .whyUSBanner {
-  background-image: url(../assets/riderback.jpg);
+  background-image: url(../assets/accordion-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1102,7 +1119,7 @@ p.headtWhy {
   background-image: url(../assets/siteSeeing.webp);
 }
 .box42Leh {
-  background-image: url(../assets/DSC_0035.JPG);
+  background-image: url(../assets/monastries/stanka.webp);
 }
 .box52Leh {
   background-image: url(../assets/DSC_0055.JPG);
@@ -1179,13 +1196,13 @@ p.headtWhy {
   background-image: url(../assets/ShamValley/Magnetic-Hill.webp);
 }
 .box3Sham {
-  background-image: url(../assets/ShamValley/Spituk_Gustor_Festival_6-Goutam-1962.webp);
+  background-image: url(../assets/ShamValley/basgo.jpg);
 }
 .box4Sham {
   background-image: url(../Backup/IMG-20240116-WA0015.jpg);
 }
 .box5Sham {
-  background-image: url(../Backup/IMG-20240116-WA0035.jpg);
+  background-image: url(../assets/ShamValley/dha-huna.jpg);
 }
 .box6Sham {
   background-image: url(../assets/Apricot-Blossom-Festival-2.jpg);
@@ -1197,13 +1214,13 @@ p.headtWhy {
   background-image: url(../assets/Nubra/Diskit-Gompa_14th-dec.webp);
 }
 .box3Nub {
-  background-image: url(../assets/Nubra/Panamik-Village_14th-dec.webp);
+  background-image: url(../assets/SkyDrive/panamik.jpg);
 }
 .box4Nub {
   background-image: url(../assets/Nubra/Hunder-sand-dunes_14th-dec.webp);
 }
 .box5Nub {
-  background-image: url(../assets/Nubra/Maitreya_Buddha\_Ladakh.jpg);
+  background-image: url(../assets/Nubra/Maitreya.jpg);
 }
 .box6Nub {
   background-image: url(../assets/camping.jpg);
@@ -1604,7 +1621,7 @@ p.offerDiv {
   border: none;
   font-size: 15px;
 }
-.theUnlimtedGuide{
+.theUnlimtedGuide,.aboutUSZ,.fixerZZZ{
   padding: 20%;
 }
 }
